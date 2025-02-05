@@ -1,13 +1,23 @@
 import './App.css'
-import Product from './Product'
+import Product from './assets/pages/Product'
+import Home from './assets/pages/Home'
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
+
 function App() {
   return (
     <>
-    <h1>Hello Everyone</h1>
-    <Product name="iphone 14" price={80000}/>
-    <Product name="samsung s23"price={60000}/>
-    <Product name="motorola"price={43095}/>
-    <Product name="redmi note 3"price={92540}/>
+    <h1 className='navbar'>NAVBAR</h1>
+<BrowserRouter>
+<Link to="/home">Home</Link><br></br>
+<Link to="/product">Product</Link><br></br>
+
+<Routes>
+  
+  <Route path='/home' element={<Home/>}/>
+  <Route path='/product' element={<Product/>}/>
+
+</Routes>
+</BrowserRouter>
  </>
   )
 }
