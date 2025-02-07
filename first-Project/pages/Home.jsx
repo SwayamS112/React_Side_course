@@ -8,7 +8,7 @@ let [name,setName] = useState("Swayam")
         // when button click it change name to thor
         console.log(name); // and this will not work 
 }
-
+    
 function mouse(){
     console.log("Mouse entered in Green");
 }

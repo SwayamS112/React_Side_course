@@ -6,7 +6,7 @@
 
 .products{
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: lightcoral;
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +22,17 @@
 
 .productitem{
   background: lightyellow;
-  height: 140px;
-  width: 200px;
+  height: auto;
+  width: fit-content;
+} 
+
+.product-img{
+  height: 90px;
+  width: auto;
+}
+
+.profile{
+  width: 100%;
+  height: 500px;
+  background-color: lightyellow;
 }
